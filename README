@@ -1,0 +1,13 @@
+# ITI–gITI–IDI Framework
+
+This repository documents the ITI–gITI–IDI framework, a computational model for measuring institutional distortion between expected policy-side strain and realized outcome-side tension.
+
+The framework separates three layers:
+
+- ITI: the expected institutional tension embedded in policy, budget, planning, funding, and allocation structures.
+- gITI: the realized geometric tension extracted from outcome data, spatial distribution, clustering, density, and observed institutional results.
+- IDI: the distortion signal calculated as the absolute gap between ITI and gITI.
+
+IDI = |ITI − gITI|
+
+The purpose of this repository is to provide a transparent model structure, data schema, and applied case pathway for institutional distortion analysis.
