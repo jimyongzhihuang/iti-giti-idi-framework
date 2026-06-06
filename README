@@ -1,13 +1,35 @@
 # ITI–gITI–IDI Framework
 
-This repository documents the ITI–gITI–IDI framework, a computational model for measuring institutional distortion between expected policy-side strain and realized outcome-side tension.
+This repository documents the ITI–gITI–IDI framework, a computational model for measuring institutional distortion between expected institutional strain and realized outcome patterns.
 
 The framework separates three layers:
 
-- ITI: the expected institutional tension embedded in policy, budget, planning, funding, and allocation structures.
-- gITI: the realized geometric tension extracted from outcome data, spatial distribution, clustering, density, and observed institutional results.
-- IDI: the distortion signal calculated as the absolute gap between ITI and gITI.
+## 1. ITI — Institutional Tension Index
 
-IDI = |ITI − gITI|
+ITI is the policy-side or budget-side estimator. It is computed from planning, funding, allocation, budget, authorization, and institutional expectation data.
 
-The purpose of this repository is to provide a transparent model structure, data schema, and applied case pathway for institutional distortion analysis.
+It represents the strain that a system expects, permits, or builds into its formal design.
+
+## 2. gITI — Geometric Institutional Tension Index
+
+gITI is the outcome-side geometric estimator. It is extracted from realized data after the system operates.
+
+It captures observed tension through spatial distribution, clustering, density, concentration, gap formation, and other geometric patterns in actual outcomes.
+
+## 3. IDI — Institutional Distortion Index
+
+IDI measures the absolute gap between ITI and gITI:
+
+IDI = |ITI - gITI|
+
+IDI functions as a distortion signal. It shows the difference between what the system expected and what the system actually produced.
+
+## Applied Case Pathway
+
+The first applied case pathway in this repository is the Lehman Brothers case.
+
+The purpose is to collect public data, map expected institutional strain, extract realized geometric tension, and calculate a preliminary institutional distortion signal.
+
+## Repository Status
+
+This repository is an early working model repository. It is intended to support future data collection, variable mapping, index construction, and case-based institutional analysis.
