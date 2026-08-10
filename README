@@ -1,35 +1,181 @@
 # ITI–gITI–IDI Framework
 
-This repository documents the ITI–gITI–IDI framework, a computational model for measuring institutional distortion between expected institutional strain and realized outcome patterns.
+The ITI–gITI–IDI framework is a measurement architecture for examining divergence between observable institutional condition and the relational capacity through which that condition must be reproduced over time.
 
-The framework separates three layers:
+It is developed within the broader Fiscal-Geometric approach to institutional continuity.
+
+The framework is **not designed as another bankruptcy-prediction model**. Its central question is different:
+
+**Can an institution remain visibly active while losing part of the relational capacity required to reproduce that activity through time?**
 
 ## 1. ITI — Institutional Tension Index
 
-ITI is the policy-side or budget-side estimator. It is computed from planning, funding, allocation, budget, authorization, and institutional expectation data.
+ITI is an independently generated quantitative measure of observable institutional tension.
 
-It represents the strain that a system expects, permits, or builds into its formal design.
+It is constructed from contemporaneously admissible quantitative evidence using a governed empirical procedure rather than researcher-assigned substantive weights.
+
+Depending on the institutional domain, candidate variables may include leverage, liquidity, capital, funding dependence, maturity structure, valuation exposure, or other measurable conditions.
+
+ITI does not represent the institution's complete structural condition. It captures the tension visible through the quantitative configuration admitted to the model.
 
 ## 2. gITI — Geometric Institutional Tension Index
 
-gITI is the outcome-side geometric estimator. It is extracted from realized data after the system operates.
+gITI is generated independently from reconstructed institutional relationships and topology.
 
-It captures observed tension through spatial distribution, clustering, density, concentration, gap formation, and other geometric patterns in actual outcomes.
+Rather than asking only how much liquidity, capital, funding, or other resources an institution possesses, gITI asks how those resources are connected, constrained, transferred, depended upon, and carried through institutional relationships.
+
+Relevant relational properties may include:
+
+- dependency;
+- path redundancy;
+- transferability;
+- concentration;
+- funding-route sensitivity;
+- collateral conditions;
+- legal-entity restrictions;
+- asset-carrying burdens.
+
+The central distinction is therefore between quantitative attributes and the institutional relationships through which those attributes acquire consequences.
 
 ## 3. IDI — Institutional Distortion Index
 
-IDI measures the absolute gap between ITI and gITI:
+After ITI and gITI are independently generated, the two measures are aligned to a common scale.
 
-IDI = |ITI - gITI|
+The Institutional Distortion Index is:
 
-IDI functions as a distortion signal. It shows the difference between what the system expected and what the system actually produced.
+**IDIₜ = |gITI*ₜ − ITI*ₜ|**
 
-## Applied Case Pathway
+The corresponding signed divergence is:
 
-The first applied case pathway in this repository is the Lehman Brothers case.
+**Dₜ = gITI*ₜ − ITI*ₜ**
 
-The purpose is to collect public data, map expected institutional strain, extract realized geometric tension, and calculate a preliminary institutional distortion signal.
+IDI measures the distance between the two independently generated institutional readings.
 
-## Repository Status
+Dₜ records the direction of that divergence.
 
-This repository is an early working model repository. It is intended to support future data collection, variable mapping, index construction, and case-based institutional analysis.
+The object of interest is not failure probability itself, but the point at which observable institutional condition and relational carrying structure cease to tell the same institutional story.
+
+## 4. Fiscal-Geometric Foundation
+
+The broader Fiscal-Geometric model represents the minimum going-concern condition as:
+
+**Fᴳᶜ = X × Y**
+
+where:
+
+- **X** denotes horizontal execution and carrying capacity across contemporaneous institutional space;
+- **Y** denotes vertical carrying capacity through time: the capacity to preserve and transmit the substantive conditions necessary for future operation.
+
+The relationship is non-compensatory.
+
+Continued or expanded execution along X cannot substitute indefinitely for deterioration in Y.
+
+ITI, gITI, and IDI are measurement instruments used to examine manifestations of this distinction. They are not direct numerical substitutes for X and Y.
+
+## 5. Lehman Brothers Empirical Test
+
+The first empirical application is a longitudinal study of Lehman Brothers using contemporaneously available pre-bankruptcy disclosures.
+
+The principal quantitative ITI specification is generated from reported leverage measures.
+
+The principal gITI specification is generated independently from five frozen relational families:
+
+1. ratings → unsecured funding access;
+2. ratings → collateral requirements;
+3. secured-funding conditions → Holding Company liquidity;
+4. legal-entity transferability → Holding Company liquidity;
+5. illiquid or concentrated assets → capital and funding pressure.
+
+Unobservable relationships are coded as **N/O**, not zero.
+
+## 6. First Empirical Results
+
+The first frozen specification produces the following aligned results:
+
+| Period | ITI* | gITI* | Dₜ |
+|---|---:|---:|---:|
+| 2007Q1 | 0.816 | 0.333 | −0.482 |
+| 2008Q1 | 1.000 | 0.400 | −0.600 |
+| 2008Q2 | 0.305 | 0.467 | +0.162 |
+
+The principal specification therefore produces an ordering reversal between 2008Q1 and 2008Q2.
+
+Observable leverage-based tension falls sharply as Lehman reports substantial deleveraging, while relational tension does not show an equivalent improvement.
+
+For the final pre-failure observation in 2008Q3, relational coverage is incomplete. No precise gITI point estimate is reported. Instead, the admissible interval remains positively divergent from aligned ITI.
+
+## 7. Robustness and Claim Boundary
+
+The Q1→Q2 ordering reversal survives:
+
+- alternative ITI construction;
+- alternative monotone scale alignment;
+- rank-based leverage aggregation.
+
+However, the most conservative gITI coding reduces the relational scores sufficiently that the precise Q2 crossover no longer survives.
+
+The strongest supported finding is therefore **directional separation rather than a universal threshold**.
+
+The framework does **not** claim that:
+
+- gITI predicts bankruptcy;
+- a specific IDI value constitutes a failure threshold;
+- relational measures are universally superior to conventional indicators;
+- Lehman-specific variables can be transferred unchanged to other institutional domains.
+
+The more defensible result is that observable quantitative improvement and relational institutional improvement can diverge.
+
+## 8. Research Contribution
+
+The framework distinguishes three empirical objects:
+
+**observable quantitative condition → relational carrying structure → divergence between the two**
+
+Its contribution is not another composite risk score.
+
+It provides a governed method for identifying when an institution's observable condition and the relational capacity required to reproduce that condition cease to move together.
+
+This architecture may later be tested across additional financial institutions and other institutional domains through:
+
+- architectural invariance;
+- functional translation;
+- empirical calibration.
+
+Cross-domain applications should compare trajectories and mechanisms rather than assume common numerical thresholds.
+
+## 9. Repository Status
+
+The Lehman Brothers case has progressed beyond preliminary variable mapping.
+
+Completed work includes:
+
+- contemporaneous source registration;
+- evidence ledger construction;
+- frozen ITI candidate universe;
+- frozen gITI relational ontology;
+- period-by-period relational coding;
+- first independent ITI and gITI runs;
+- scale alignment;
+- IDI and signed-divergence calculation;
+- alternative ITI specifications;
+- alternative alignment;
+- conservative gITI robustness testing.
+
+The current empirical classification is:
+
+**Conditional support for late-window separation between leverage-visible tension and relational institutional tension.**
+
+## 10. Current Research Direction
+
+The next research stage is comparative validation.
+
+Potential extensions include:
+
+- failed financial institutions;
+- surviving peers exposed to the same crisis environment;
+- pension systems;
+- public institutions;
+- regulatory and administrative systems;
+- educational institutions.
+
+The central comparative question is whether institutional divergence is temporary and recoverable or persistent and associated with deterioration in institutional continuity.
